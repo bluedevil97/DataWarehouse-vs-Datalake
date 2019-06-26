@@ -60,7 +60,69 @@ Los almacenes de datos (data warehouses en inglés) toman cada día mayor import
 \section{Introduccion}
 \section{DataWarehouse}
 
+Definición de Bill Inmon\\
+\\Fue uno de los primeros autores en escribir sobre el tema de los almacenes de datos, define un data warehouse (almacén de datos) en términos de las características del repositorio de datos:
+
+\begin{itemize}
+	\item Orientado a temas: Los datos en la base de datos están organizados de manera que todos los elementos de datos relativos al mismo evento u objeto del mundo real queden unidos entre sí.
+	\item Variante en el tiempo: Los cambios producidos en los datos a lo largo del tiempo quedan registrados para que los informes que se puedan generar reflejen esas variaciones.
+	\item No volátil: La información no se modifica ni se elimina, una vez almacenado un dato, éste se convierte en información de sólo lectura, y se mantiene para futuras consultas.
+	\item Integrado: La base de datos contiene los datos de todos los sistemas operacionales de la organización, y dichos datos deben ser consistentes.
+\end{itemize}
+
+Definición de Ralph Kimball\\
+\\Define un almacén de datos como: "Es un almacén de datos que extrae, limpia, conforma y entrega una fuente de datos dimensional para la consulta y el análisis". También fue Kimball quien determinó que un data warehouse no era más que: "la unión de todos los Data marts de una entidad". Defiende por tanto una metodología ascendente (bottom-up) a la hora de diseñar un almacén de datos.
+
+
 \subsection{Materiales y Metodos}
+
+ESTRUCTURA\\
+\\La arquitectura de un data warehouse puede ser dividida en tres estructuras simplificadas: básica, básica con un área de ensayo y básica con área de ensayo y data marts.
+
+\begin{itemize}
+	\item Con una estructura básica, sistemas operativos y archivos planos proporcionan datos en bruto que se almacenan junto con metadatos. Los usuarios finales pueden acceder a ellos para su análisis, generación de informes y minería.
+	\item Al añadir un área de ensayo que se puede colocar entre las fuentes de datos y el almacén, ésta proporciona un lugar donde los datos se pueden limpiar antes de entrar en el almacén. Es posible personalizar la arquitectura del almacén para diferentes grupos dentro de la organización.
+	\item Se puede hacer agregando data marts, que son sistemas diseñados para una línea de negocio en particular. Se pueden tener data marts separados para ventas, inventario y compras, por ejemplo, y los usuarios finales pueden acceder a datos de uno o de todos los data marts del departamento.
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/imagen1} 
+\end{center}
+
+ETL (Extract-Transform-Load)\\
+\begin{itemize}
+	\item Extracción: obtención de información de las distintas fuentes tanto internas como externas.
+	\item Transformación: filtrado, limpieza, depuración, homogenización y depuración de la información.
+
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/imagen2} 
+\end{center}
+
+	\item Carga: Organización y actualización de los datos y los metadatos de la base de datos.
+\end{itemize}
+
+DATA MART\\
+\\Es una base de datos departamental, especializada en un área de negocio especifica. Se caracteriza por disponer la estructura optima de datos para analizar el informacional detalle desde todas las perspectivas que afecten a los procesos de dicho negocio.
+
+\begin{center}
+	\includegraphics[width=6cm]{./Imagenes/imagen3} 
+\end{center}
+
+CUBOS\\
+\\Es una base de datos especial, en la cual el almacenamiento físico de los datos se realiza en un vector multidimensional.
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/imagen4} 
+\end{center}
+
+Diferencias con un DB Transaccional\\
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/imagen5} 
+\end{center}
+
+HERRAMIENTAS\\
+\begin{center}
+	\includegraphics[width=12cm]{./Imagenes/imagen5} 
+\end{center}
 
 \subsection{Resultados}
 

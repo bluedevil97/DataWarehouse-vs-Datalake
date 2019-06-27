@@ -114,20 +114,53 @@ CUBOS\\
 	\includegraphics[width=12cm]{./Imagenes/imagen4} 
 \end{center}
 
-Diferencias con un DB Transaccional\\
-\begin{center}
-	\includegraphics[width=12cm]{./Imagenes/imagen5} 
-\end{center}
 
-HERRAMIENTAS\\
-\begin{center}
-	\includegraphics[width=12cm]{./Imagenes/imagen5} 
-\end{center}
+\subsection{Modos de Uso del Data WareHouse}
+\begin{itemize}
+	\item Para tener un mayor conocimiento del negocio
+	\item Para tomar mejores decisiones y en un tiempo menor.
+	\item Para mejorar y ser más efectivos.
+	\item Para no perder distancia con la competencia.
+\end{itemize}
+ Las data warehouse son la base para los sistemas de gestión de relaciones con los clientes, ya que pueden ser utilizados para la consolidación de los datos del cliente y la identificación de áreas de satisfacción y/o frustración del cliente.
+\\
+También se utilizan para la detección de fraudes, análisis de reposicionamiento de producto, el descubrimiento de centros de beneficio y gestión de activos corporativos. 
+\\\\Ejemplos:
+\begin{itemize}
+	\item Para los minoristas, un almacén de datos o data warehouse puede ayudar a identificar las características demográficas de los clientes, identificar los patrones de compra y mejorar las respuestas de correo directo. 
+	\item Para los bancos, puede ayudar en la detección de fraude de tarjetas de crédito, ayudar a identificar a los clientes más rentables, y poner de relieve los clientes más fieles.
+	
+\end{itemize}
 
-\subsection{Resultados}
+\subsection{Data Lake vs Data Warehouse}
+\begin{itemize}
+	\item Un Data Lake conserva todos los datos, a diferencia del almacen de datos, donde se dedica una parte importante de tiempo a decidir quq datos incluir y no incluir en el almacen.
+\item Un Data Lake admite todos los tipos de datos, independientemente de su tipo, formato o procedencia y sin necesidad de normalizar su estructura. La información se mantiene en su forma original y solo se transforma cuando se va a consumir.
+	\item El Data Lake puede nutrir a todos los usuarios de la organización, incluyendo a esos perfiles técnicos con exigencias de análisis más avanzadas, que son quienes recurren a capacidades como análisis estadístico y modelado predictivo.
+	\item A diferencia del Data Warehouse, el Data Lakes se adapta fácilmente a los cambios. El diseño del almacén es un proceso complejo y, la actualidad de los negocios, en ocasiones no puede esperar tanto tiempo. Para esas circunstancias, asegura la adaptabilidad necesaria para entregar respuestas más rápidas.
+	
+\end{itemize}
+\subsection{Herramientas para Implementar un Data Warehouse}
 
+-Productos Comerciales
+\begin{itemize}
+	\item Atlas SBI
+	\item Bitool Herramienta de ETL y Visualizacion
+	\item Bingo Intelligence
+	\item BIRT Analytics	
+	\item Business Objects	
+	\item Dynamic Data Web	
+\end{itemize}
+-Productos Open Source
+\begin{itemize}
+	\item SpagoBI
+	\item Pentaho
+	\item OpenI: Aplicación Web simple orientada al reporting OLAP.
+	\item LogiReport: Aplicación de BI gratuita basada en Web de LogiXML	
+	\item JasperReports	
+	\item Eclipse BIRT Project: Generador de informes para aplicaciones Web de código abierto basado en Eclipse	
+\end{itemize}
 \subsection{Conclusiones}
-
 \begin{itemize}
 	\item Las particiones no se procesaban en paralelo si no secuencialmente, lo que hace que sea más lento el procesamiento.
 	\item No se pueden usar multiples idiomas.

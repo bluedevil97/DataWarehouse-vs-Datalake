@@ -1,0 +1,5 @@
+jhordy:
+-http://softpei.blogspot.com/2016/08/herramientas-para-implementar-un-data.html
+-https://www.areatecnologia.com/informatica/data-warehouse.html
+-https://www.dataprix.com/herramientas-para-la-implantacion-un-sistema-data-warehouse
+-http://fccea.unicauca.edu.co/old/datawarehouse.htm

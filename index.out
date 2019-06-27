@@ -1,15 +1,26 @@
 \BOOKMARK [1][-]{section.1}{Resumen}{}% 1
-\BOOKMARK [1][-]{section.2}{Marco Teorico}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Modelo Dimensional}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Desarrollo de Modelo Tabular}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Los Modelos multidimensional y tabular en la solucion BI}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Experimentacion y valoraciones generales}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.5}{Modelo Tabular}{section.2}% 7
-\BOOKMARK [1][-]{section.3}{Ejemplo}{}% 8
-\BOOKMARK [1][-]{section.4}{Ventajas y Desventajas}{}% 9
-\BOOKMARK [2][-]{subsection.4.1}{Ventajas del Modelo Tabular}{section.4}% 10
-\BOOKMARK [2][-]{subsection.4.2}{Desventajas del Modelo Tabular}{section.4}% 11
-\BOOKMARK [1][-]{section.5}{Diferencias}{}% 12
-\BOOKMARK [2][-]{subsection.5.1}{\277Qu\351 modelo de datos utilizar? }{section.5}% 13
-\BOOKMARK [2][-]{subsection.5.2}{Diferencias del Modelo Multidimensional vs Modelo Tabular}{section.5}% 14
-\BOOKMARK [1][-]{section.6}{Conclusiones}{}% 15
+\BOOKMARK [1][-]{section.2}{Introduccion}{}% 2
+\BOOKMARK [1][-]{section.3}{DataWarehouse}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Materiales y Metodos}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Modos de Uso del Data WareHouse}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Data Lake vs Data Warehouse}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Herramientas para Implementar un Data Warehouse}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.5}{Conclusiones}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Datalake}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Beneficios}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Principales Diferencias entre DataLakes y Data Warehouses}{section.4}% 11
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Una Data Lake conserva todos los datos}{subsection.4.2}% 12
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Un Data Lake soporta todos los tipos de datos}{subsection.4.2}% 13
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Un Data Lakes soporta a todos los usuarios}{subsection.4.2}% 14
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Los Data Lakes se adaptan f\341cilmente a los cambios}{subsection.4.2}% 15
+\BOOKMARK [3][-]{subsubsection.4.2.5}{ Los Data Lakes proporcionan una visi\363n m\341s r\341pida}{subsection.4.2}% 16
+\BOOKMARK [2][-]{subsection.4.3}{Materiales y Metodos}{section.4}% 17
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Supervicion arquitectonica}{subsection.4.3}% 18
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Estrategia de Seguridad}{subsection.4.3}% 19
+\BOOKMARK [3][-]{subsubsection.4.3.3}{I/O y modelo de memoria}{subsection.4.3}% 20
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Plan de operaciones}{subsection.4.3}% 21
+\BOOKMARK [3][-]{subsubsection.4.3.5}{Plan de comunicaciones}{subsection.4.3}% 22
+\BOOKMARK [3][-]{subsubsection.4.3.6}{Plan de comunicaciones}{subsection.4.3}% 23
+\BOOKMARK [2][-]{subsection.4.4}{Data Lake Inteligente}{section.4}% 24
+\BOOKMARK [2][-]{subsection.4.5}{Resultados}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.6}{Conclusiones}{section.4}% 26

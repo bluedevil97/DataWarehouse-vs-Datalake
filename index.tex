@@ -30,7 +30,8 @@
 		\begin{abstract}
 			%% Text of we
 			
-The data warehouses in English take each importance day, as organizations move from schemes of only data collection to schemes of analysis of the same. However, in spite of the great diffusion of the concepts related to data warehouses, there is not too much Information available in Spanish regarding the methodologies fo implement them In this short article we will try to provide a general explanation of one of the most used methodologies. 
+In the present work the comparison of speed and simplicity of use of a DataWarehouse and Datalake is analyzed. \\
+Different concepts are presented as well as their different characteristics, the structure of each of them is analyzed, results are compared, their differences are highlighted and in the end the conclusions of the same are given.
 		\end{abstract}
 \end{frontmatter}
 %%
@@ -41,7 +42,8 @@ The data warehouses in English take each importance day, as organizations move f
 	
 	%% main text
 	\section{Resumen}
-Los almacenes de datos (data warehouses en inglés) toman cada día mayor importancia, a medida que las organizaciones pasan de esquemas de sólo recolección de datos a esquemas de análisis de los mismos. Sin embargo a pesar de la gran difusión de los conceptos relacionados con los almacenes de datos, no existe demasiada información disponible en castellano en cuanto a las metodologías para implementarlos. En este breve artículo intentaremos brindar una explicación general de una de las metodologías más usadas \\
+En el presente trabajo se analiza la comparativa de rapidez y simplicidad de uso de un DataWarehouse y de Datalake.\\
+Se presentan diferentes conceptos así como también sus diversas características, se analiza la estructura de cada una de ellas, se comparan resultados, se destacan sus diferencias y al final se dan las conclusiones de las mismas.\\
 	%%
 	
 	%%
@@ -58,6 +60,11 @@ Los almacenes de datos (data warehouses en inglés) toman cada día mayor import
 	
 	%% main text
 \section{Introduccion}
+
+Internet y las nuevas tecnologías han provocado el acceso y el almacenamiento desmesurado de información de los clientes y potenciales. Las empresas son cada vez más conscientes de la importancia que tienen esos datos para conocer mejor a los usuarios y así poder ofrecerles aquello que realmente piden, y no lo que nosotros pensamos que necesitan.\\
+Esto es lo que se llama, aplicar estrategias customer centric. Para ello se necesita gestionar altos volúmenes de datos, tanto en tiempo real como organizados. Para ello, no hay nada mejor que un Data Warehouse o un Data Lake.
+\pagebreak
+
 \section{DataWarehouse}
 
 Definición de Bill Inmon\\
@@ -73,6 +80,7 @@ Definición de Bill Inmon\\
 Definición de Ralph Kimball\\
 \\Define un almacén de datos como: "Es un almacén de datos que extrae, limpia, conforma y entrega una fuente de datos dimensional para la consulta y el análisis". También fue Kimball quien determinó que un data warehouse no era más que: "la unión de todos los Data marts de una entidad". Defiende por tanto una metodología ascendente (bottom-up) a la hora de diseñar un almacén de datos.
 
+\pagebreak
 
 \subsection{Materiales y Metodos}
 
@@ -89,13 +97,17 @@ ESTRUCTURA\\
 	\includegraphics[width=12cm]{./Imagenes/imagen1} 
 \end{center}
 
+
+\pagebreak
+
+
 ETL (Extract-Transform-Load)\\
 \begin{itemize}
 	\item Extracción: obtención de información de las distintas fuentes tanto internas como externas.
 	\item Transformación: filtrado, limpieza, depuración, homogenización y depuración de la información.
 
 \begin{center}
-	\includegraphics[width=12cm]{./Imagenes/imagen2} 
+	\includegraphics[width=11cm]{./Imagenes/imagen2} 
 \end{center}
 
 	\item Carga: Organización y actualización de los datos y los metadatos de la base de datos.
@@ -105,7 +117,7 @@ DATA MART\\
 \\Es una base de datos departamental, especializada en un área de negocio especifica. Se caracteriza por disponer la estructura optima de datos para analizar el informacional detalle desde todas las perspectivas que afecten a los procesos de dicho negocio.
 
 \begin{center}
-	\includegraphics[width=6cm]{./Imagenes/imagen3} 
+	\includegraphics[width=5cm]{./Imagenes/imagen3} 
 \end{center}
 
 CUBOS\\
@@ -179,7 +191,7 @@ El data lake se asocia a menudo con el almacenamiento de objetos orientado a Had
 \subsection{Beneficios}
 \begin{itemize}
 \item El principal beneficio de un data lake es la centralización de fuentes de contenido dispares. Una vez reunidas (de sus "silos de información"), estas fuentes pueden ser combinadas y procesadas utilizando big data, búsquedas y análisis que de otro modo hubieran sido imposibles. Las fuentes de contenido dispares a menudo contienen información confidencial que requerirá la implementación de las medidas de seguridad apropiadas \\
-\item Es posible que algunos usuarios no necesiten trabajar con los datos en el origen de contenido original, sino consumir los datos resultantes de los procesos incorporados a dichos orígenes. Puede haber un límite de licencias para el origen de contenido original que impide que algunos usuarios obtengan sus propias credenciales. En algunos casos, la fuente de contenido original se ha bloqueado, está obsoleta o se desactivará en breve, sin embargo, su contenido sigue siendo valioso para los usuarios del data lake.\\
+\item Es posible que algunos usuarios no necesiten trabajar con los datos en el origen de contenido original, sino consumir los datos resultantes de los procesos incorporados a dichos orígenes. Puede haber un límite de licencias para el origen de contenido original que impide que algunos usuarios obtengan sus propias credenciales. En algunos casos, la fuente de contenido original se ha bloqueado, está obsoleta o se desactivará en breve.\\
 \item Es posible que algunos usuarios no necesiten trabajar con los datos en el origen de contenido original, sino consumir los datos resultantes de los procesos incorporados a dichos orígenes. Puede haber un límite de licencias para el origen de contenido original que impide que algunos usuarios obtengan sus propias credenciales. En algunos casos, la fuente de contenido original se ha bloqueado, está obsoleta o se desactivará en breve, sin embargo, su contenido sigue siendo valioso para los usuarios del data lake.\\
 \item Una vez que el contenido está en el data lake, puede normalizarse y enriquecerse. Esto puede incluir extracción de metadatos, conversión de formatos, aumento, extracción de entidades, reticulación, agregación, des-normalización o indexación.\\
 \item Los datos se preparan "según sea necesario", lo que reduce los costos de preparación sobre el procesamiento inicial (tal como sería requerido por los data warehouses. Una estructura de big data permite escalar este procesamiento para incluir los conjuntos de datos más grandes posibles.\\
@@ -291,12 +303,17 @@ Las organizaciones recolectan datos de clientes y de mercado por su potencial pa
 		%ESTILO
 	%ARCHIVO .bib
 	   \begin{thebibliography}{0}
-              \bibitem{Juan} https://bib.irb.hr/datoteka/102195.t09r02.pdf 
-                 \bibitem{Juan} https://www.sarjen.com/2016/03/15/what-are-the-pros-and-cons-of-tabular-model-over-multi-dimension-cube-and-relation-database/
-                 \bibitem{Juan} https://www.element61.be/en/resource/choice-between-tabular-or-multidimensional-models-sql-server-analysis-services-2012
-                  \bibitem{Jhordy} https://docs.microsoft.com/es-es/sql/analysis-services/comparing-tabular-and-multidimensional-solutions-ssas?view=sql-server-2017
- \bibitem{Jhordy} https://www.businessintelligence.info/definiciones/que-es-modelo-dimensional.html
-                    \bibitem{Brandon} https://www.businessintelligence.info/definiciones/que-es-modelo-dimensional.html
+              \bibitem{Juan} https://artyco.com/data-warehouse-data-lake-que-es/
+              \bibitem{Juan} https://www.element61.be/en/resource/choice-between-tabular-or-multidimensional-models-sql-server-analysis-services-2012
+              \bibitem{Jhordy} http://softpei.blogspot.com/2016/08/herramientas-para-implementar-un-data.html
+ 	   \bibitem{Jhordy} https://www.areatecnologia.com/informatica/data-warehouse.html
+             \bibitem{Jhordy} https://www.dataprix.com/herramientas-para-la-implantacion-un-sistema-data-warehouse
+            \bibitem{Brandon} https://www.powerdata.es/data-lake
+ 	 \bibitem{Angelo} https://blog.powerdata.es/el-valor-de-la-gestion-de-datos/data-lake-vs-data-warehouse.-veamos-sus-principales-diferencias
+ 	 \bibitem{Angelo} https://www.muycomputerpro.com/2018/08/27/data-lake-data-warehouse
+  	\bibitem{Ronald} https://www.tecnologias-informacion.com/data-lake.html
+	\bibitem{Ronald} https://www.ionos.es/digitalguide/online-marketing/analisis-web/los-data-warehouses-en-la-business-intelligence/
+
 
 
          \end{thebibliography}
